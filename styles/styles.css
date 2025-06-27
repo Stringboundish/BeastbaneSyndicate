@@ -60,10 +60,3 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
 }
-body {
-  background: url('/TestingBranch/assets/bg-scroll-dark.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #EEECEA;
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
-}
