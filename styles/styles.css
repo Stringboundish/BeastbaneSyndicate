@@ -17,9 +17,7 @@ nav {
   margin: 0;
   padding: 0;
 }
-.navbar li {
-  position: relative;
-}
+.navbar li {position: relative;}
 .navbar a,
 .navbar button {
   background: none;
@@ -48,11 +46,24 @@ nav {
 }
 .dropdown-content li a {
   display: block;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em;}
+.dropdown.open .dropdown-content {display: block;}
+.container {padding: 2em;}
+nav {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #5c3c31;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-.dropdown.open .dropdown-content {
-  display: block;
+.navbar a,
+.navbar button {
+  color: #d4b08b;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.container {
-  padding: 2em;
+body {
+  background: url('/TestingBranch/assets/bg-scroll-dark.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #EEECEA;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
 }
