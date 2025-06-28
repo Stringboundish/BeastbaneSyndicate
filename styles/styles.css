@@ -86,30 +86,52 @@ nav {
    📱 Responsive Mobile Styles
    ================================ */
 @media (max-width: 600px) {
-  .navbar {flex-direction: column; align-items: flex-start; gap: 0;}
-  .navbar li {width: 100%;}
+  .navbar {flex-direction: column; align-items: center; gap: 0;}
+  .navbar li { width: 100%;}
   .navbar a,
-  .navbar button {display: block; width: 100%; text-align: left;}
+  .navbar button { display: block; width: 100%; text-align: center;}
   .dropdown-content {position: static; width: 100%;}
   .container {padding: 1em;}
-  h1 {font-size: 1.5em; text-align: center;}
+  h1 {font-size: 1.5em;text-align: center;}
 }
 
 /* ================================
    📸 Image Containers
    ================================ */
-.image-container {
-  max-width: 220px;
-  margin: 1.5em auto;
-  padding: 0.5em;
-  background-color: rgba(30, 30, 30, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 0 10px #000;
-  text-align: center;
-}
+.image-container {max-width: 220px; margin: 1.5em auto; padding: 0.5em; text-align: center;}
+.image-container img {width: 100%; height: auto; border-radius: 6px;}
 
-.image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
+/* ================================
+   🎯 Clean Centering 
+   ================================ */
+h1, h2, h3, summary {
+  font-family: 'Cinzel', serif;
+  color: #d4b08b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 
+    1px 1px 0 #000,
+    2px 2px 1px #3e302c,
+    -1px -1px 0 #000;
+  border-bottom: 1px solid #3e302c;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+.image-container {margin-left: auto;margin-right: auto;}
+.container p,
+details p,
+details div,
+details ul {text-align: left;}
+
+/* ================================
+   🎯 Dividers
+   ================================ */
+.section-divider {
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to right, #5c3c31, #2b1f1c, #5c3c31);
+  margin: 2em auto;
+  border-radius: 1px;
+  opacity: 0.6;
 }
