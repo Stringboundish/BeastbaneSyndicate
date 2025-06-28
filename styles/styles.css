@@ -99,7 +99,7 @@ nav {
    📸 Image Containers
    ================================ */
 .image-container {
-  max-width: 100%;
+  max-width: 220px;
   margin: 1.5em auto;
   padding: 0.5em;
   background-color: rgba(30, 30, 30, 0.9);
