@@ -104,22 +104,45 @@ nav {
 /* ================================
    🎯 Centering Content
    ================================ */
+/* 1. Center the entire container block on the screen */
 .container {
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 2em;
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid #3e302c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* 2. Center all main titles and section headings */
+h1, h2, h3,
+summary {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: #d4b08b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 
+    1px 1px 0 #000,
+    2px 2px 1px #3e302c,
+    -1px -1px 0 #000;
+  border-bottom: 1px solid #3e302c;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+/* 3. Center image containers and content */
+.image-container {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-details > p,
-details > div,
-details > ul {
-  text-align: center;
-}
-
-h1, h2, h3 {
-  text-align: center;
-}
-.image-container {margin-left: auto;margin-right: auto;}
+/* 4. Keep all paragraph/body/list content left-aligned for readability */
 .container p,
 details p,
 details div,
-details ul {text-align: left;}
-
+details ul {
+  text-align: left;
+}
