@@ -124,14 +124,3 @@ details p,
 details div,
 details ul {text-align: left;}
 
-/* ================================
-   🎯 Dividers
-   ================================ */
-.section-divider {
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(to right, #5c3c31, #2b1f1c, #5c3c31);
-  margin: 2em auto;
-  border-radius: 1px;
-  opacity: 0.6;
-}
