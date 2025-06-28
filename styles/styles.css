@@ -1,37 +1,73 @@
-
+/* ================================
+   🧱 Base Layout + Page Structure
+   ================================ */
 body {
-  background-color: #19191B;
+  background-color: #0e0e0e;
   color: #EEECEA;
-  font-family: sans-serif;
+  font-family: 'Caudex', serif;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
+.container {
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid #3e302c;
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;}
+
+/* ================================
+   📜 Typography & Font Styles
+   ================================ */
+h1, h2, h3 {
+  color: #d4b08b;
+  text-transform: uppercase;
+  letter-spacing: 1px;}
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #d4b08b;}
+
+/* ================================
+   🗂 Detail Sections (like Backstory)
+   ================================ */
+details {
+  background: rgba(25, 25, 25, 0.8);
+  border: 1px solid #5c3c31;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 0 10px #111;}
+
+/* ================================
+   🧭 Navbar Styles
+   ================================ */
 nav {
-  background-color: #111;
-  padding: 0.5em 1em;
-}
-.navbar {
-  display: flex;
-  list-style: none;
-  gap: 1em;
-  margin: 0;
-  padding: 0;
-}
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #5c3c31;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0.5em 1em;}
+.navbar {display: flex; list-style: none; gap: 1em; margin: 0; padding: 0;}
 .navbar li {position: relative;}
 .navbar a,
 .navbar button {
   background: none;
   border: none;
-  color: #EEECEA;
+  color: #d4b08b;
   text-decoration: none;
   padding: 0.5em 0.75em;
   font: inherit;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+
 .navbar a:hover,
 .navbar button:hover {
   background-color: #333;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -42,21 +78,39 @@ nav {
   padding: 0;
   z-index: 1000;
   list-style: none;
-  width: 160px;
-}
-.dropdown-content li a {
-  display: block;
-  padding: 0.5em 1em;}
+  width: 160px;}
+.dropdown-content li a {display: block; padding: 0.5em 1em;}
 .dropdown.open .dropdown-content {display: block;}
-.container {padding: 2em;}
-nav {
-  background-color: #1a1a1a;
-  border-bottom: 2px solid #5c3c31;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+/* ================================
+   📱 Responsive Mobile Styles
+   ================================ */
+@media (max-width: 600px) {
+  .navbar {flex-direction: column; align-items: flex-start; gap: 0;}
+  .navbar li {width: 100%;}
+  .navbar a,
+  .navbar button {display: block; width: 100%; text-align: left;}
+  .dropdown-content {position: static; width: 100%;}
+  .container {padding: 1em;}
+  h1 {font-size: 1.5em; text-align: center;}
 }
-.navbar a,
-.navbar button {
-  color: #d4b08b;
-  font-weight: bold;
-  text-transform: uppercase;
+
+/* ================================
+   📸 Image Containers
+   ================================ */
+.image-container {
+  max-width: 100%;
+  margin: 1.5em auto;
+  padding: 0.5em;
+  background-color: rgba(30, 30, 30, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 6px;
 }
